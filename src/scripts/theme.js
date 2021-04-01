@@ -1,3 +1,5 @@
+import './Theme.css';
+
 // DOM Elements
 const lightButton = document.querySelector('#light');
 const darkButton = document.querySelector('#dark');
@@ -20,3 +22,18 @@ darkButton.addEventListener('click', () => {
   body.classList.replace('light', 'dark');
   localStorage.setItem('theme', 'dark');
 });
+
+export default function Theme() {
+  return (
+    <>
+      <button
+        type="button"
+        id="themeSwitch"
+        name="theme-switch"
+        className="switch"
+      >
+        sun
+      </button>
+    </>
+  );
+}
