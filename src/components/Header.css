@@ -1,118 +1,141 @@
-/* Small screens */
-@media only screen and (max-width: 600px) {
-  /* STAGGERED */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/*
+:root {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  --navWidth: 5rem;
+  --bigNavWidth: 16rem;
 
-  /* .container {
-  overflow-x: hidden;
-  width: 100%;
+  --text-primary: hsl(0, 0%, 85%, 0.8);
+  --text-secondary: hsla(0, 0%, 90%);
+
+  --bg-primary: hsla(0, 0%, 15%, 0.9);
+  --bg-secondary: hsl(0, 0%, 10%);
+
+  --accentColor: hsl(293, 62%, 65%, 90%);
+  --transition-speed: 600ms;
 }
 
-.menu-toggler {
-  display: none;
-}
-
-.menu-toggler-label {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.stagger-menu {
-  list-style-type: none;
-  margin: 16px 0;
-  padding: 0;
-}
-
-.stagger-menu li {
-  margin-bottom: 8px;
-  font-size: 18px;
-  opacity: 0;
-  max-width: max-content;
-  transform: translateX(100%);
-  transition-property: opacity, transform;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
-}
-
-.menu-toggler:checked ~ .stagger-menu li {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: calc(0.055s * var(--i));
-}
-
-/* HOVER
-
-.hover-nav ul {
-  list-style: none;
+body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  background: var(--text-secondary);
+  color: var(--bg-secondary);
 }
 
-.hover-nav li a {
-  color: #222;
-  text-align: center;
-  padding: 8px 12px;
-  text-decoration: none;
-  z-index: 0;
+body p {
+  line-height: 1.5;
+  word-break: break-word;
+  //Justifies text 
+  text-align: justify; 
+  // Hypenation on auto 
+  hyphens: auto; 
 }
 
-li a:before {
-  position: absolute;
-  content: "";
-  width: 100%;
+h1 + p:first-letter {
+  font-size: 2em;
+  // The line-height must be adjusted to compensate for the increased font size, otherwise the leading for the overall line is disrupted. I find that any values below 0.4 work. 
+  line-height: 0; 
+}
+
+main {
+  margin-left: var(--navWidth);
+  padding: 1rem;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+  overflow: scroll;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: hsl(110, 60%, 40%);
-  z-index: -1;
-  transform: scale(0);
-  transition: transform 0.4s ease-in-out;
 }
 
-li a:hover:before,
-li a:focus:before {
-  transform: scale(1);
+.nav-item {
+  width: 100%;
 }
 
-/* TOGGLE SWITCH
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  transition: all 0.3s;
+.nav-item:last-child {
+  margin-top: auto;
 }
 
-.switch:after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 18px;
-  background-color: white;
-  top: 1px;
-  left: 1px;
-  transition: all 0.3s;
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: var(--navWidth);
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
 }
 
-input[type="checkbox"]:checked + .switch:after {
-  transform: translateX(20px);
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-primary);
+  color: var(--text-secondary);
 }
 
-input[type="checkbox"]:checked + .switch {
-  background-color: #7983ff;
+.nav-link svg {
+  min-width: 2rem;
+  width: 2rem;
+  margin: 0 1.5rem;
 }
 
-.offscreen {
-  position: absolute;
-  left: -9999px;
-} */
+.icon {
+  fill: var(--accentColor);
+  transition: var(--transition-speed);
 }
 
-/* Large screens */
+.link-text {
+  display: none;
+  margin-left: 1rem;
+  color: var(--text-secondary);
+}
+
+// Large screens
 @media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: var(--navWidth);
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: var(--bigNavWidth);
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
 }
+
+// Small screens
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+*/
