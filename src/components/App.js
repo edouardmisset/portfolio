@@ -1,7 +1,12 @@
 import './App.css';
+import Header from './Header';
 
 function App() {
-  return <div className="App">My portfolio</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
