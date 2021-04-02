@@ -1,12 +1,12 @@
 main {
-  margin-left: var(--navWidth);
+  margin-left: var(--nav-width);
   padding: 1rem;
 }
 
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
-  transition: width 600ms ease;
+  transition: width calc(var(--transition-speed) * 2) ease;
   overflow: scroll;
 }
 
@@ -31,7 +31,7 @@ main {
 .nav-link {
   display: flex;
   align-items: center;
-  height: var(--navWidth);
+  height: var(--nav-width);
   color: var(--text-primary);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
@@ -51,7 +51,7 @@ main {
 }
 
 .icon {
-  fill: var(--accentColor);
+  fill: var(--accent-color);
   transition: var(--transition-speed);
 }
 
@@ -65,12 +65,12 @@ main {
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: var(--navWidth);
+    width: var(--nav-width);
     height: 100vh;
   }
 
   .navbar:hover {
-    width: var(--bigNavWidth);
+    width: var(--big-nav-width);
   }
 
   .navbar:hover .link-text {

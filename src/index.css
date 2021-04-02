@@ -29,7 +29,7 @@
   --text-secondary: var(--grey7);
   --bg-primary: var(--grey0);
   --bg-secondary: var(--gey2);
-  --accentColor: var(--blue2);
+  --accent-color: var(--blue2);
 
   /* Defaults for dark theme */
   /* 
@@ -45,8 +45,8 @@
 
   /* Sizing */
 
-  --navWidth: 5rem;
-  --bigNavWidth: 16rem;
+  --nav-width: 5rem;
+  --big-nav-width: 16rem;
 
   /* Default animation speed */
   --transition-speed: 300ms;
