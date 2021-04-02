@@ -1,5 +1,6 @@
 import './Main.css';
 import Section from './Section';
+import Contact from './Contact';
 
 export default function Main() {
   return (
@@ -7,7 +8,7 @@ export default function Main() {
       <Section className="section" sectionName="about" />
       <Section className="section" sectionName="skills" />
       <Section className="section" sectionName="portfolio" />
-      <Section className="section" sectionName="contact" />
+      <Contact />
     </main>
   );
 }
