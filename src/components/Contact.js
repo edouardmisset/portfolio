@@ -37,6 +37,20 @@ export default function Contact() {
           </a>
         </li>
       </ul>
+      <form id="contact-form">
+        <label className="contact-form-label" htmlFor="name">
+          Name: <input type="text" name="name" id="name" />
+        </label>
+
+        <label className="contact-form-label" htmlFor="email">
+          Email <input type="email" name="email" id="email" />
+        </label>
+
+        <label className="contact-form-label" htmlFor="message">
+          Message <input type="text" name="message" id="message" />
+        </label>
+        <input type="submit" value="Send" />
+      </form>
     </section>
   );
 }

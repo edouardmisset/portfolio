@@ -1,0 +1,35 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-social {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#contact-form {
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.contact-form-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5em auto;
+}
+
+/* Styling the inputs */
+#contact-form input {
+  border: 1px solid #999;
+  padding: 0.5em 1em;
+}
+
+/* Styling the inputs on focus */
+#contact-form input:focus {
+  border: 3px solid #555;
+}
