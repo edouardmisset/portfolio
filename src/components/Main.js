@@ -1,20 +1,13 @@
 import './Main.css';
+import Section from './Section';
 
 export default function Main() {
   return (
     <main>
-      <section className="section" id="about">
-        About
-      </section>
-      <section className="section" id="skills">
-        Skills
-      </section>
-      <section className="section" id="portfolio">
-        Portfolio
-      </section>
-      <section className="section" id="contact">
-        Contact
-      </section>
+      <Section className="section" sectionName="about" />
+      <Section className="section" sectionName="skills" />
+      <Section className="section" sectionName="portfolio" />
+      <Section className="section" sectionName="contact" />
     </main>
   );
 }
