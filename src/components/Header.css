@@ -1,5 +1,4 @@
 main {
-  margin-left: var(--nav-width);
   padding: 1rem;
 }
 
@@ -18,6 +17,7 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  background: var(--bg-secondary);
 }
 
 .nav-item {
@@ -63,6 +63,9 @@ main {
 
 /* Large screens */
 @media only screen and (min-width: 600px) {
+  main {
+    margin-left: var(--nav-width);
+  }
   .navbar {
     top: 0;
     width: var(--nav-width);
