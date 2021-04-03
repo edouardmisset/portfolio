@@ -3,7 +3,7 @@ import './Contact.css';
 export default function Contact() {
   return (
     <section className="section" id="contact">
-      <h2>Let's get in touch 👋</h2>
+      <h2 className="section-title">Let's get in touch 👋</h2>
       {/* TODO: Grab mail, GH & LinkedIn SVG  */}
       <ul className="list-social">
         <li className="item-social">
