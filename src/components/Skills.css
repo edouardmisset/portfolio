@@ -1,0 +1,13 @@
+.list-title {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.list-skills {
+  list-style: none;
+}
+
+.skill-item {
+  font-weight: 400;
+}
