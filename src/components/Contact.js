@@ -39,7 +39,7 @@ export default function Contact() {
       </ul>
       <form id="contact-form">
         <label className="contact-form-label" htmlFor="name">
-          Name: <input type="text" name="name" id="name" />
+          Name <input type="text" name="name" id="name" />
         </label>
 
         <label className="contact-form-label" htmlFor="email">

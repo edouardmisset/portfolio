@@ -1,3 +1,9 @@
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Small screens */
 @media only screen and (max-width: 600px) {
 }
@@ -6,5 +12,9 @@
 @media only screen and (min-width: 600px) {
   main {
     scroll-snap-type: y mandatory;
+  }
+
+  section {
+    scroll-snap-align: start;
   }
 }
