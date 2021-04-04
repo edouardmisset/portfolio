@@ -22,9 +22,14 @@
 }
 
 /* Styling the inputs */
-#contact-form input {
+#contact-form input,
+textarea {
   border: 1px solid var(--grey4);
   padding: 0.5em 1em;
+}
+/* Styling the inputs */
+#contact-form textarea {
+  min-height: 4em;
 }
 
 /* Styling the inputs on focus */
@@ -35,6 +40,12 @@ select:focus {
   border-bottom: 2px solid var(--accent-color);
 }
 
-#send {
+#contact-form #send {
   margin: 1em 0;
+  padding: 0.5em 0;
+  font-size: var(--font-size);
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border: 1px solid var(--bg-secondary);
+  border-radius: 0.5em;
 }

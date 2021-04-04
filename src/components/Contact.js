@@ -42,15 +42,25 @@ export default function Contact() {
         <label className="contact-form-label" htmlFor="name">
           Name
         </label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" placeholder="John Doe" />
         <label className="contact-form-label" htmlFor="email">
           Email
         </label>
-        <input type="email" name="email" id="email" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="john.doe@example.com"
+        />
         <label className="contact-form-label" htmlFor="message">
           Message
         </label>
-        <input type="text" name="message" id="message" />
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Hi there! I would love to work with you 🙂"
+        />
         <input type="button" value="Send" id="send" />
       </form>
     </section>
