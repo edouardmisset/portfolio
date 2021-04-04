@@ -1,0 +1,27 @@
+:root {
+  --skill-height: 0.5em;
+}
+
+.language {
+  margin: 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gauge {
+  height: var(--skill-height);
+  width: 80%;
+  background-color: var(--bg-secondary);
+  border-radius: calc(var(--skill-height) / 2);
+}
+
+.gauge > div {
+  height: var(--skill-height);
+  background-color: aqua;
+  border-radius: calc(var(--skill-height) / 2);
+}

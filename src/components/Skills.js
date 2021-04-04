@@ -1,4 +1,5 @@
 import './Skills.css';
+import Skill from './Skill';
 
 export default function Skills() {
   return (
@@ -10,7 +11,9 @@ export default function Skills() {
       <ul className="list-skills">
         {/* Add icons to the language's name */}
         {/* Add gauge to the language */}
-        <li className="skill-item">HTML</li>
+        <li className="skill-item">
+          <Skill name="HTML" level="80" />
+        </li>
         <li className="skill-item">CSS</li>
         <li className="skill-item">JS</li>
         <li className="skill-item">React</li>
