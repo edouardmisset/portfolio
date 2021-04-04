@@ -51,7 +51,7 @@ export default function Contact() {
           Message
         </label>
         <input type="text" name="message" id="message" />
-        <input type="submit" value="Send" />
+        <input type="button" value="Send" id="send" />
       </form>
     </section>
   );

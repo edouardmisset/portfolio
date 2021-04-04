@@ -27,7 +27,7 @@
 .nav-link {
   display: flex;
   align-items: center;
-  height: var(--nav-width);
+  height: var(--nav-size);
   color: var(--text-primary);
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
@@ -61,16 +61,16 @@
 @media only screen and (min-width: 600px) {
   main {
     padding: 1rem;
-    margin-left: var(--nav-width);
+    margin-left: var(--nav-size);
   }
   .navbar {
     top: 0;
-    width: var(--nav-width);
+    width: var(--nav-size);
     height: 100vh;
   }
 
   .navbar:hover {
-    width: var(--big-nav-width);
+    width: var(--big-nav-size);
   }
 
   .navbar:hover .link-text {
@@ -80,10 +80,14 @@
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
+  main {
+    padding-bottom: var(--nav-size);
+  }
+
   .navbar {
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: var(--nav-size);
   }
 
   .navbar-nav {

@@ -45,8 +45,8 @@
 
   /* Sizing */
 
-  --nav-width: 5rem;
-  --big-nav-width: 16rem;
+  --nav-size: 5rem;
+  --big-nav-size: 16rem;
 
   /* Default animation speed */
   --transition-speed: 300ms;

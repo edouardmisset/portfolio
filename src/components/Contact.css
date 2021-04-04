@@ -13,23 +13,28 @@
   margin: 1em auto;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 .contact-form-label {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0.5em auto;
+  margin: 1em 0 0.5em;
 }
 
 /* Styling the inputs */
 #contact-form input {
-  border: 1px solid #999;
+  border: 1px solid var(--grey4);
   padding: 0.5em 1em;
 }
 
 /* Styling the inputs on focus */
-#contact-form input:focus {
-  border: 3px solid #555;
+#contact-form input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+#send {
+  margin: 1em 0;
 }
