@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import './Contact.css';
 
 export default function Contact() {
@@ -39,16 +40,17 @@ export default function Contact() {
       </ul>
       <form id="contact-form">
         <label className="contact-form-label" htmlFor="name">
-          Name <input type="text" name="name" id="name" />
+          Name
         </label>
-
+        <input type="text" name="name" id="name" />
         <label className="contact-form-label" htmlFor="email">
-          Email <input type="email" name="email" id="email" />
+          Email
         </label>
-
+        <input type="email" name="email" id="email" />
         <label className="contact-form-label" htmlFor="message">
-          Message <input type="text" name="message" id="message" />
+          Message
         </label>
+        <input type="text" name="message" id="message" />
         <input type="submit" value="Send" />
       </form>
     </section>
