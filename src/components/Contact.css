@@ -11,8 +11,11 @@
 
 #contact-form {
   margin: 1em auto;
+  padding: 1em 2em;
+  box-shadow: 3px 3px 30px var(--box-shadow);
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-secondary);
 }
 
 .contact-form-label {

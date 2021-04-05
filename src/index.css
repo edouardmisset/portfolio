@@ -45,6 +45,9 @@
   ...
   */
 
+  /* Components' colors */
+  --box-shadow: var(--grey4);
+
   /* Fonts and colors */
 
   font-size: 16px;
