@@ -1,14 +1,41 @@
+/* main #portfolio {
+  height: auto;
+} */
+
 .site-container {
   display: grid;
   gap: 1em;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
-  /* overflow: auto; */
+  padding: 1em;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .site-preview {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: coral;
   min-height: 100px;
-  /* aspect-ratio: 1; */
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .site-container {
+    grid-template-columns: 1fr;
+  }
+
+  .site-preview {
+    /* aspect-ratio: 1/2; */
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .site-container {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    /* overflow: auto; */
+  }
+  .site-preview {
+    /* aspect-ratio: 2/1; */
+  }
 }
