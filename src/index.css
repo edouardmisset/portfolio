@@ -70,6 +70,7 @@
 
 * {
   box-sizing: border-box;
+  transition: background 400ms ease-in, color 800ms ease-in;
 }
 
 body {
