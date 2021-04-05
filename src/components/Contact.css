@@ -56,3 +56,18 @@ select:focus {
   border: 1px solid var(--bg-secondary);
   border-radius: var(--border-radius);
 }
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  #contact-form {
+    width: 100%;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  #contact-form {
+    min-width: 65%;
+    max-width: 80ch;
+  }
+}
