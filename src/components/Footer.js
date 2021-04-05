@@ -3,7 +3,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer>
-      Made with <strong>🐒 🐒 🐒</strong>
+      <span id="made-with">Made with 🐒 🐒 🐒</span>
     </footer>
   );
 }
