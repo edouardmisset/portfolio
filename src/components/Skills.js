@@ -12,16 +12,16 @@ export default function Skills() {
         {/* Add icons to the language's name */}
         {/* Add gauge to the language */}
         <li className="skill-item">
-          <Skill name="HTML" level="90" />
+          <Skill name="HTML" level="90" color="var(--html)" />
         </li>
         <li className="skill-item">
-          <Skill name="CSS" level="80" />
+          <Skill name="CSS" level="80" color="var(--css)" />
         </li>
         <li className="skill-item">
-          <Skill name="JS" level="70" />
+          <Skill name="JS" level="70" color="var(--javascript)" />
         </li>
         <li className="skill-item">
-          <Skill name="React" level="60" />
+          <Skill name="React" level="60" color="var(--react)" />
         </li>
       </ul>
       <h3 className="list-title">Back-End</h3>
@@ -29,13 +29,13 @@ export default function Skills() {
         {/* Add icons to the language's name */}
         {/* Add gauge to the language */}
         <li className="skill-item">
-          <Skill name="NodeJS" level="30" />
+          <Skill name="NodeJS" level="30" color="var(--nodeJS)" />
         </li>
         <li className="skill-item">
-          <Skill name="Express" level="30" />
+          <Skill name="Express" level="30" color="var(--express)" />
         </li>
         <li className="skill-item">
-          <Skill name="SQL" level="40" />
+          <Skill name="MySQL" level="40" color="var(--mysql)" />
         </li>
       </ul>
     </section>

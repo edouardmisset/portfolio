@@ -24,6 +24,15 @@
   --grey8: hsl(0, 0%, 15%);
   --grey9: hsl(0, 0%, 5%);
 
+  /* Languages colors */
+  --css: hsl(208, 61%, 59%);
+  --express: hsl(0, 0%, 20%);
+  --html: rgb(212, 87, 53);
+  --javascript: rgb(210, 186, 78);
+  --mysql: rgb(98, 173, 198);
+  --nodeJS: rgb(153, 197, 93);
+  --react: rgb(129, 216, 247);
+
   /* Defaults for light theme */
   --text-primary: var(--grey9);
   --text-secondary: var(--grey7);
