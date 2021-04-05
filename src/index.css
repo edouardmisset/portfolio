@@ -52,13 +52,6 @@
   --border-radius: 0.5em;
   --font-size: 16px;
 
-  /* Fonts and colors */
-
-  font-size: var(--font-size);
-  font-family: 'Open Sans', sans-serif;
-  color: var(--text-primary);
-  background: var(--bg-primary);
-
   /* Sizing */
 
   --nav-size: 5rem;
@@ -68,9 +61,14 @@
   --transition-speed: 300ms;
 }
 
+header,
+footer,
+main {
+  transition: background 400ms ease-in, color 800ms ease-in;
+}
+
 * {
   box-sizing: border-box;
-  transition: background 400ms ease-in, color 800ms ease-in;
 }
 
 body {
@@ -81,6 +79,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Fonts and colors */
+
+  font-size: var(--font-size);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-primary);
 }
 
 code {

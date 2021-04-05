@@ -1,45 +1,31 @@
+/* Light theme colors */
 .light {
-  --bg: var(--grey0);
-  --bg-nav: linear-gradient(to right, var(--grey1), var(--grey2));
-  --bg-header: linear-gradient(to right, var(--grey0), var(--grey1));
-  --bg-dropdown: var(--grey2);
-  --text: var(--grey5);
-  --border-color: var(--blue3);
-  --shadow: var(--grey4);
-}
-#light::before {
-  background: var(--grey0);
+  --bg-primary: var(--grey0);
+  --bg-secondary: var(--grey1);
+  --text-primary: var(--grey9);
+  --text-secondary: var(--grey8);
+
+  --box-shadow: var(--grey3);
 }
 
+/* Dark theme colors */
 @media (prefers-color-scheme: dark) {
   .dark {
-    --bg: var(--grey5);
-    --bg-nav: linear-gradient(to right, var(--grey3), var(--grey4));
-    --bg-header: linear-gradient(to right, var(--grey4), var(--grey5));
-    --bg-dropdown: var(--grey3);
-    --text: var(--grey0);
-    --border-color: var(--blue1);
-    --shadow: var(--grey5); /* TODO What value to use ?? */
+    --bg-primary: var(--grey7);
+    --bg-secondary: var(--grey8);
+    --text-primary: var(--grey1);
+    --text-secondary: var(--grey0);
+
+    --box-shadow: var(--grey4);
   }
   .dark img {
     /* Images should appear slightly less bright and contrasted in dark mode */
     filter: brightness(0.8) contrast(1.2);
   }
-  #dark::before {
-    background: var(--grey4);
-  }
 
   #logo {
     filter: grayscale(100%);
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', Verdana, sans-serif;
-  color: var(--text);
-  background: var(--bg);
 }
 
 @keyframes rainbow-animation {
@@ -55,4 +41,15 @@ body {
   animation: rainbow-animation 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+#theme-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5em;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius);
 }

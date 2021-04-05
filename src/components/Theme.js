@@ -4,10 +4,10 @@ import './Theme.css';
 const root = document.querySelector('#root');
 
 // Apply the cached theme on reload
-// const theme = localStorage.getItem('theme');
-// if (theme) {
-//   root.classList.add(theme);
-// }
+const theme = localStorage.getItem('theme');
+if (theme) {
+  root.classList.add(theme);
+}
 
 export default function Theme() {
   // Button Event Handlers
@@ -25,12 +25,12 @@ export default function Theme() {
   return (
     <button
       type="button"
-      id="themeSwitch"
+      id="theme-switch"
       name="theme-switch"
       className="switch"
       onClick={switchTheme}
     >
-      Sun / Moon
+      🌞 / 🌝
     </button>
   );
 }
