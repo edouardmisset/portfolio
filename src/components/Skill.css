@@ -23,7 +23,7 @@
 .gauge {
   height: var(--skill-height);
   width: 80%;
-  margin: 0 1em;
+  margin-left: 1em;
   background-color: var(--bg-secondary);
   border-radius: calc(var(--skill-height) / 2);
 }
