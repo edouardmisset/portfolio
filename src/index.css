@@ -48,9 +48,13 @@
   /* Components' colors */
   --box-shadow: var(--grey4);
 
+  /* Components' sizes */
+  --border-radius: 0.5em;
+  --font-size: 16px;
+
   /* Fonts and colors */
 
-  font-size: 16px;
+  font-size: var(--font-size);
   font-family: 'Open Sans', sans-serif;
   color: var(--text-primary);
   background: var(--bg-primary);
