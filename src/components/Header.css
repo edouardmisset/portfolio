@@ -1,5 +1,6 @@
 .navbar {
   position: fixed;
+  z-index: 100;
   transition: width calc(var(--transition-speed) * 2) ease;
   overflow: scroll;
 }
