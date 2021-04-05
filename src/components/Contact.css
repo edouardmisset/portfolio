@@ -34,6 +34,8 @@ textarea {
   border-radius: var(--border-radius);
   padding: 0.5em 1em;
   width: 30ch;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 /* Styling the inputs */
 #contact-form textarea {
