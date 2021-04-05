@@ -47,9 +47,11 @@
   position: fixed;
   top: 1rem;
   right: 1rem;
+  padding: 0.5em 1em;
   font-size: 1.5em;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   border: 1px solid var(--accent-color);
-  border-radius: var(--border-radius);
+  border-radius: calc(var(--border-radius) * 2);
+  outline: none;
 }

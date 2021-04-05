@@ -63,7 +63,8 @@
 
 header,
 footer,
-main {
+main,
+button {
   transition: background 400ms ease-in, color 800ms ease-in;
 }
 
