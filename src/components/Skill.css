@@ -22,6 +22,5 @@
 
 .gauge > div {
   height: var(--skill-height);
-  background-color: aqua;
   border-radius: calc(var(--skill-height) / 2);
 }
