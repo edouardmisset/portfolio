@@ -64,6 +64,8 @@
     top: 0;
     width: var(--nav-size);
     height: 100vh;
+    box-shadow: calc(var(--font-size) / 2) 0px calc(var(--font-size) / 2)
+      var(--box-shadow);
   }
 
   .navbar:hover {
@@ -89,6 +91,8 @@
     bottom: 0;
     width: 100vw;
     height: var(--nav-size);
+    box-shadow: 0px calc(0px - (var(--font-size) / 2))
+      calc(var(--font-size) / 2) var(--box-shadow);
   }
 
   .navbar-nav {
