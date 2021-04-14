@@ -38,7 +38,9 @@
   --text-secondary: var(--grey8);
   --bg-primary: var(--grey0);
   --bg-secondary: var(--grey1);
+  --accent-color-disabled: var(--blue1);
   --accent-color: var(--blue2);
+  --accent-color-active: var(--blue3);
 
   /* Defaults for dark theme */
   /* 
@@ -49,7 +51,7 @@
   --box-shadow: var(--grey3);
 
   /* Components' sizes */
-  --border-radius: 0.5em;
+  --border-radius: 0.25em;
   --font-size: 16px;
 
   /* Sizing */
