@@ -28,7 +28,6 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  /* background-color: var(--accent-color); */
   background-color: transparent;
   background-image: -webkit-linear-gradient(
     left,
@@ -38,7 +37,6 @@ progress::-webkit-progress-value {
 }
 
 progress::-moz-progress-bar {
-  /* background-color: var(--accent-color); */
   background-color: transparent;
   background-image: -moz-linear-gradient(
     left,

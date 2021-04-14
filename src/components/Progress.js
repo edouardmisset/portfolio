@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Progress.css';
 
 // const window = document.querySelector('window');
 
 export default function Progress() {
-  const [viewportHeight, setViewportHeight] = useState(0);
+  const [progressValue, setProgressValue] = useState(0);
+  // const [scrollableHeight, setScrollableHeight] = useState(0);
+  // const [scrolledHeight, setscrolledHeight] = useState(0);
 
-  // Get the viewport height when component loads
-  useEffect(() => {
+  function handleProgressUpdate() {
     const { body } = document;
     const html = document.documentElement;
     const docHeight = Math.max(
@@ -17,17 +18,20 @@ export default function Progress() {
       html.scrollHeight,
       html.offsetHeight
     );
-    setViewportHeight(document.documentElement.clientHeight);
-    console.log(viewportHeight, docHeight);
-  }, []);
-
-  function handleProgressUpdate() {
-    console.log(viewportHeight);
+    const viewportHeight = document.documentElement.clientHeight;
+    const scrollableHeight = docHeight - viewportHeight;
+    const scrolledHeight = window.scrollY;
+    setProgressValue(scrolledHeight / scrollableHeight);
   }
+
+  // Get the viewport height when component loads
+  useEffect(() => {
+    window.addEventListener('scroll', handleProgressUpdate);
+  }, []);
 
   return (
     <>
-      <progress value="0" onScroll={handleProgressUpdate} />
+      <progress value={progressValue} />
     </>
   );
 }
