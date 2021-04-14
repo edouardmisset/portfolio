@@ -38,30 +38,44 @@ export default function Contact() {
           </a>
         </li>
       </ul>
+
       <form id="contact-form">
-        <label className="contact-form-label" htmlFor="name">
-          Name
-        </label>
-        <input type="text" name="name" id="name" placeholder="John Doe" />
-        <label className="contact-form-label" htmlFor="email">
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="john.doe@example.com"
-        />
-        <label className="contact-form-label" htmlFor="message">
-          Message
-        </label>
-        <textarea
-          type="text"
-          name="message"
-          id="message"
-          placeholder="Hi there! I would love to work with you 🙂"
-        />
-        <input type="button" value="Send" id="send" />
+        <div className="input-group">
+          <label className="contact-form-label" htmlFor="name">
+            Name
+          </label>
+          <input
+            type="text"
+            name="fullname"
+            id="name"
+            placeholder="John Doe"
+            autoComplete="true"
+          />
+        </div>
+        <div className="input-group">
+          <label className="contact-form-label" htmlFor="email">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="john.doe@example.com"
+            autoComplete="true"
+          />
+        </div>
+        <div className="input-group">
+          <label className="contact-form-label" htmlFor="message">
+            Message
+          </label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Hi there! I would love to work with you 🙂"
+          />
+        </div>
+        <input type="button" value="Submit" id="submit" />
       </form>
     </section>
   );
