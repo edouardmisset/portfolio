@@ -6,4 +6,5 @@
   border: 1px solid var(--accent-color);
   border-radius: calc(var(--border-radius) * 2);
   outline: none;
+  cursor: pointer;
 }
