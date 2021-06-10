@@ -1,0 +1,19 @@
+.title {
+  margin-top: 8rem;
+  line-height: 200%;
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+#tag-line {
+  margin-left: 3rem;
+  font-size: xx-large;
+}
+
+#my-name {
+  display: inline-block;
+  transform: rotateZ(-12deg);
+  margin: auto 1rem;
+  font-family: 'Pacifico';
+  letter-spacing: 0.125rem;
+}
