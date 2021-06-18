@@ -5,11 +5,29 @@
   margin-top: 0;
 }
 
-.list-skills {
+.stack {
+  padding: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: calc(var(--border-radius) * 4);
+}
+
+#back-end {
+  margin-top: 1rem;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--skill-size), 1fr));
+  grid-gap: 2rem;
+
   list-style: none;
-  padding: 0 1em;
+  padding: 0;
 }
 
 .skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 400;
 }

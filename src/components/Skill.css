@@ -1,34 +1,32 @@
 :root {
-  --skill-height: 1em;
+  --skill-size: 4.5rem;
+  --skill-inner-size: 4rem;
 }
 
 .language {
   display: flex;
   flex-direction: column;
   margin: 0;
-  /* padding: 0; */
   justify-content: center;
   align-items: center;
 }
 
 .skill {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  height: var(--skill-size);
+  width: var(--skill-size);
+  border-radius: 50%;
   margin: 1em;
-  transition: width var(--transition-speed) ease;
 }
 
-.gauge {
-  height: var(--skill-height);
-  width: 80%;
-  margin-left: 1em;
+.skill-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--skill-inner-size);
+  height: var(--skill-inner-size);
+  border-radius: 50%;
   background-color: var(--bg-secondary);
-  border-radius: calc(var(--skill-height) / 2);
-}
-
-.gauge > div {
-  height: var(--skill-height);
-  border-radius: calc(var(--skill-height) / 2);
 }

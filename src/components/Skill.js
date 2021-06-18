@@ -1,21 +1,25 @@
 import './Skill.css';
 
-export default function Skill({ name, level, color, icon }) {
+export default function Skill({ name, color, icon }) {
   return (
-    <span className="skill" id={name}>
-      <h5 className="language">
-        <img src={icon} width="32" height="32" alt={name} title={name} />
-        {name}
-      </h5>
-      <div className="gauge">
-        <div
-          className={level}
-          style={{
-            width: `${parseInt(level, 10)}%`,
-            backgroundColor: `${color}`,
-          }}
+    <div
+      className="skill"
+      id={name}
+      style={{
+        backgroundColor: `${color}`,
+      }}
+    >
+      <div className="skill-background">
+        <img
+          className="language-icon"
+          src={icon}
+          width="32"
+          height="32"
+          alt={name}
+          title={name}
         />
+        <h5 className="language">{name}</h5>
       </div>
-    </span>
+    </div>
   );
 }
