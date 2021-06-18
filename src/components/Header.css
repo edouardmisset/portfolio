@@ -94,8 +94,6 @@
     bottom: 0;
     width: 100vw;
     height: var(--nav-size);
-    box-shadow: 0px calc(0px - (var(--font-size) / 2))
-      calc(var(--font-size) / 2) var(--box-shadow);
   }
 
   .navbar-nav {
