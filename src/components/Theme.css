@@ -6,7 +6,7 @@
   --text-secondary: var(--grey8);
 
   --box-shadow: var(--grey3);
-  --theme-switch-shadow: 2px 2px 5px 3px;
+  --theme-switch-shadow: 7px 7px 0px 0px;
 }
 
 /* Dark theme colors */
@@ -48,9 +48,9 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  background-color: var(--bg-primary);
+  /* padding: 1rem; */
+  font-size: 2rem;
+  /* background-color: var(--bg-secondary); */
   color: var(--text-primary);
   border: 2px solid var(--accent-color);
   border-radius: calc(2.5rem);

@@ -10,15 +10,16 @@ if (theme) {
 }
 
 export default function Theme() {
-  // Button Event Handlers
-  function switchTheme() {
+  function switchTheme(e) {
     // Case light and case dark
     if (root.classList.contains('light')) {
       root.classList.replace('light', 'dark');
       localStorage.setItem('theme', 'dark');
+      e.target.textContent = '🌞';
     } else {
       root.classList.replace('dark', 'light');
       localStorage.setItem('theme', 'light');
+      e.target.textContent = '🌝';
     }
   }
 
@@ -30,7 +31,7 @@ export default function Theme() {
       className="switch"
       onClick={switchTheme}
     >
-      🌞 / 🌝
+      🌝
     </button>
   );
 }
