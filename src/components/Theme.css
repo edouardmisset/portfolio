@@ -6,6 +6,7 @@
   --text-secondary: var(--grey8);
 
   --box-shadow: var(--grey3);
+  --theme-switch-shadow: 2px 2px 5px 3px;
 }
 
 /* Dark theme colors */
@@ -44,15 +45,18 @@
 }
 
 #theme-switch {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
-  padding: 0.5em 1em;
-  font-size: 1.5em;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  border: 1px solid var(--accent-color);
-  border-radius: calc(var(--border-radius) * 2);
+  border: 2px solid var(--accent-color);
+  border-radius: calc(2.5rem);
   outline: none;
   cursor: pointer;
+  -webkit-box-shadow: var(--theme-switch-shadow) var(--box-shadow); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: var(--theme-switch-shadow) var(--box-shadow); /* Firefox 3.5 - 3.6 */
+  box-shadow: var(--theme-switch-shadow) var(--box-shadow); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
