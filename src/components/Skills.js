@@ -48,14 +48,10 @@ export default function Skills() {
             <Skill name="MySQL" color="var(--mysql)" icon={MySQLIcon} />
           </li>
           <li className="skill-item">
-            <Skill
-              name="PostgreSQL"
-              color="var(--postgresql)"
-              icon={postgreSQL}
-            />
+            <Skill name="Postgre" color="var(--postgresql)" icon={postgreSQL} />
           </li>
           <li className="skill-item">
-            <Skill name="MongoDB" color="var(--mongodb)" icon={mongoDB} />
+            <Skill name="Mongo" color="var(--mongodb)" icon={mongoDB} />
           </li>
         </ul>
       </div>
